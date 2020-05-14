@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../static/images/htmlIco.ico">
+  <link rel="stylesheet" href="../static/css/config.css">
+  <link rel="stylesheet" href="../static/font_icon/iconfont.css">
+  <link rel="stylesheet" href="../static/css/common.css">
+  <link rel="stylesheet" href="../static/css/login.css">
+  <script type="application/x-javascript"> addEventListener("load", function () {
+    setTimeout(hideURLbar, 0);
+  }, false);
+  function hideURLbar() {
+      window.scrollTo(0, 1);
+  } </script>
+  <title>Login</title>
+</head>
+<body>
+  <!-- 最外层的盒子 -->
+  <div class="container">
+    <!-- 头部导航 -->
+    <header class="header">
+    </header>
+    <!-- 内容部分 -->
+    <div class="content">
+      <!-- 登录注册 -->
+      <form method="post" action="{{ url_for("user.login") }}">
+        <div class="middle-box">
+          <div class="login-box">
+            <P class="title">
+              智能&nbsp;&nbsp;&nbsp;
+              <i class="icon iconfont icon-int icon-logo"></i>
+              监控
+            </P>
+            <div class="login-input">
+              <i class="icon iconfont icon-people icon-input"></i>
+              <input type="text" class="text" name="username" value="admin" onfocus="this.value = '';"
+              onblur="if (this.value == '') {this.value = 'Username';}">
+            </div>
+            <div class="login-input">
+                <i class="icon iconfont icon-lock icon-input"></i>
+                <input type="password" name="password" value="admin" onfocus="this.value = '';"
+                onblur="if (this.value == '') {this.value = 'Password';}">
+            </div>
+            <div class="login-more">
+            </div>
+            <button class="login-bt">登录</button>
+            <div class="login-type">
+              <p> Copyright@2020 Contact On&nbsp;<a href="https://liudongdong1.github.io/" target="_blank" title="Github">Github</a></p>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+    </div>
+    <!-- 页面底部 -->
+    <footer class="copy-rights">
+     
+    </footer>
+  </div>
+
+  <!-- 页面脚本文件 -->
+  <script src="../static/js/common.js"></script>
+</body>
+</html>
